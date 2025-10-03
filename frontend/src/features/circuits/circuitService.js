@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = '/api/circuits/'|| 'https://circuit-project.onrender.com/';
+const API_URL = `${import.meta.env.VITE_API_URL}/api/circuits/`
 
 const getAuthHeaders = () => {
   const user = JSON.parse(localStorage.getItem('user'));
